@@ -1,0 +1,19 @@
+
+.alto{
+    height: 80px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition-duration: 0.2s;
+}
+
+a:hover{
+    color: cyan;
+}
+
+.pointer{
+    cursor: pointer;
+}
