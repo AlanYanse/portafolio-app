@@ -7,10 +7,9 @@
 </div>
 -->
 
-<!--<app-spinner></app-spinner>-->
-
+<app-spinner *ngIf="loading"></app-spinner>
 <!--Grid-->
-<div class="container">
+<div class="container" *ngIf="!loading">
         <div class="row">
           <div class="col">
             <app-presentacion></app-presentacion>

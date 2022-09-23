@@ -8,13 +8,15 @@ import * as TagCloud from 'TagCloud';
 })
 export class EsferaComponent implements OnInit {
 
+  sphereProperty: boolean = true;
 
   texts: string[] = [
     'HTML', 'CSS', 'JAVASCRIPT',
     'TYPESCRIPT', '.NET', 'ANGULAR',
     'PYTHON', 'BOOTSTRAP',
     'SPRING', 'BASH', 'DJANGO',
-    'LINUX', 'MYSQL', 'JQUERY', 'JAVA'
+    'LINUX', 'MYSQL', 'JQUERY', 'JAVA',
+    'JIRA'
   ];
 
   //colorProperty = '#FF5733 ';
@@ -25,6 +27,8 @@ export class EsferaComponent implements OnInit {
   }
 
   ngOnInit(): void {
+
+    this.showSphere();
 
     TagCloud('.Sphere', this.texts, {
 
@@ -45,6 +49,17 @@ export class EsferaComponent implements OnInit {
     });
 
    
+  }
+
+  showSphere(): void{
+
+    let duracion: number = 2250;
+
+    setTimeout(()=>{
+
+      this.sphereProperty = false;
+
+    }, duracion);
   }
 
   
