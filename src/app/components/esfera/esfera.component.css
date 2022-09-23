@@ -1,0 +1,20 @@
+
+/*     Importing Google fonts    */
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
+
+ /* Applying CSS to sphere */
+ .Sphere {
+    /* display: inline-block;*/
+    /* top: 100px;*/
+    /* left: 32%;*/
+     font-weight: normal;
+     letter-spacing: 1px;
+     font-family: 'VT323', monospace;
+     color: black;
+     font-size: 20px;
+   }
+   
+   /* Change color of each text in sphere on hover   */
+   .Sphere--item:hover {
+     color: cyan;
+   }
