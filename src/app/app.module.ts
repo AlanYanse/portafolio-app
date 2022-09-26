@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { PresentacionComponent } from './components/presentacion/presentacion.component';
 import { EsferaComponent } from './components/esfera/esfera.component';
+import { TrabajosComponent } from './components/trabajos/trabajos.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { EsferaComponent } from './components/esfera/esfera.component';
     NavbarComponent,
     SpinnerComponent,
     PresentacionComponent,
-    EsferaComponent
+    EsferaComponent,
+    TrabajosComponent
   ],
   imports: [
     BrowserModule,
