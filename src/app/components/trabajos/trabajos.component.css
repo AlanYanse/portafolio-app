@@ -9,26 +9,27 @@ input{
   font-size: 20px;
   margin: 1.5em 0px;
   padding: 5px 25px;
-  border-radius: 50px;
+  /*border-radius: 50px;*/
   display: inline-block;
   cursor: pointer;
-  background: #efefef;
+  background: hsl(0, 0%, 94%);
   text-decoration: none;
   color: black;
   border: 1px solid #ccc;
+  font-family: 'VT323', monospace;
 }
 
-img{
+a img{
   max-width: 300px;
   width: 300px;
-  height: 300px;
+  /*height: 300px;*/
   transition: all .4s ease-in-out;
 }
 /*filter CSS */
 
-#fish:checked ~ .images > img:not([class*='fish']),
-#birds:checked ~ .images > img:not([class*='birds']),
-#lion:checked ~ .images > img:not([class*='lion']){
+#fish:checked ~ .images > a img:not([class*='fish']),
+#birds:checked ~ .images > a img:not([class*='birds']),
+#lion:checked ~ .images > a img:not([class*='lion']){
  width: 0px;
  height: 0px;
 }
@@ -37,6 +38,6 @@ img{
 #fish:checked ~ .tag1, 
 #birds:checked ~ .tag2,
 #lion:checked ~ .tag3{
-  background-color: #333333;      
-  color: white;
+  background-color: #292b2c;      
+  color: cyan;
 } 
