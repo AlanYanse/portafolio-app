@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import * as $ from 'jquery';
+
+
 
 @Component({
   selector: 'app-trabajos',
@@ -7,13 +10,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TrabajosComponent implements OnInit {
 
+  title = 'Recent Photos'
+	@Input() filterBy?: string = 'all'
+	visibleImages: any[] = [];
+
 
   constructor() { }
 
 
   ngOnInit(): void {
+
     
-    
+
+
+
+
   }
 
 

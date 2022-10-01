@@ -1,43 +1,16 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');*/
-/* Center website */
 
-input{
-  display: none;
-}
 
-.tag{
-  font-size: 20px;
-  margin: 1.5em 0px;
-  padding: 5px 25px;
-  /*border-radius: 50px;*/
-  display: inline-block;
-  cursor: pointer;
-  background: hsl(0, 0%, 94%);
-  text-decoration: none;
-  color: black;
-  border: 1px solid #ccc;
-  font-family: 'VT323', monospace;
-}
+.banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  }
 
-a img{
-  max-width: 300px;
-  width: 300px;
-  /*height: 300px;*/
-  transition: all .4s ease-in-out;
-}
-/*filter CSS */
+  a{
+    color: #292b2c;
+  }
 
-#fish:checked ~ .images > a img:not([class*='fish']),
-#birds:checked ~ .images > a img:not([class*='birds']),
-#lion:checked ~ .images > a img:not([class*='lion']){
- width: 0px;
- height: 0px;
-}
+  a:hover {
+    color: cyan;
+  }
 
-#all:checked ~ .all,
-#fish:checked ~ .tag1, 
-#birds:checked ~ .tag2,
-#lion:checked ~ .tag3{
-  background-color: #292b2c;      
-  color: cyan;
-} 
