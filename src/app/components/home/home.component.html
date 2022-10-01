@@ -1,6 +1,21 @@
-<!--<app-spinner></app-spinner>-->
 
-<div class="container">
+
+<!--
+<div class="container d-flex justify-content-space-between align-items-center">
         <app-presentacion></app-presentacion>
+        <app-esfera></app-esfera>
 </div>
+-->
 
+<app-spinner *ngIf="loading"></app-spinner>
+<!--Grid-->
+<div class="container" *ngIf="!loading">
+        <div class="row">
+          <div class="col">
+            <app-presentacion></app-presentacion>
+          </div>
+          <div class="col">
+            <app-esfera></app-esfera>
+          </div>
+        </div>
+</div>

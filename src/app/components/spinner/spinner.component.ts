@@ -7,26 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SpinnerComponent implements OnInit {
 
-  loading: boolean = true
+
 
   constructor() { }
 
   ngOnInit(): void {
 
-    this.spinnerloading();
+    
     
   }
 
-  spinnerloading(): void{
-
-    
-    setTimeout(()=>{
-      
-      this.loading = false;
-    }, 3500);
-
-    
-  }
+  
 
   
 

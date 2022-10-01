@@ -1,0 +1,43 @@
+
+/*     Importing Google fonts    */
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');*/
+
+ /* Applying CSS to sphere */
+ .Sphere {
+    /* display: inline-block;*/
+    /* top: 100px;*/
+    /* left: 32%;*/
+     font-weight: normal;
+     letter-spacing: 1px;
+     font-family: 'VT323', monospace;
+     color: black;
+     font-size: 20px;
+   }
+   
+   /* Change color of each text in sphere on hover   */
+   .Sphere--item:hover {
+     color: cyan;
+   }
+
+
+   /*--- Efecto FadeIn --- */
+
+   .Sphere{
+
+    animation: fadeIn 2s ease;
+    
+   }
+
+   @keyframes fadeIn{
+
+    0% { 
+      opacity: 0;
+      filter: blur(20px);
+    }
+
+    10% { 
+      opacity: 1;
+      filter: brightness(2) blur(10px);
+    }
+
+   }

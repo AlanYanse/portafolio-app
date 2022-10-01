@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class PresentacionComponent implements OnInit {
 
   nombre: string = "Alan.Yanse();"; 
-  tagLine: string = "";
+  tagLineProperty: boolean = true;
   
   constructor() { }
 
@@ -25,7 +25,7 @@ export class PresentacionComponent implements OnInit {
 
     setTimeout(()=>{
 
-      this.tagLine = "web full-stack";
+      this.tagLineProperty = false;
 
     }, duracion);
   }
