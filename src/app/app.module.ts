@@ -12,6 +12,7 @@ import { PresentacionComponent } from './components/presentacion/presentacion.co
 import { EsferaComponent } from './components/esfera/esfera.component';
 import { TrabajosComponent } from './components/trabajos/trabajos.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ContactoComponent } from './components/contacto/contacto.component';
     PresentacionComponent,
     EsferaComponent,
     TrabajosComponent,
-    ContactoComponent
+    ContactoComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
