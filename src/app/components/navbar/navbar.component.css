@@ -1,7 +1,4 @@
 
-.alto{
-    height: 80px;
-}
 
 a{
     color: white;
@@ -16,4 +13,23 @@ a:hover{
 
 .pointer{
     cursor: pointer;
+}
+
+li {
+    margin: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    
+    .navbar{
+        justify-content: end;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .navbar{
+        justify-content: center;
+    }
 }
