@@ -1,0 +1,9 @@
+
+img {
+    width: 40px;
+    margin: 20px;
+}
+
+a:hover{
+    color: cyan;
+}

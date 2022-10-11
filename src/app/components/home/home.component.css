@@ -1,0 +1,19 @@
+/*
+@media (max-width: 600px) {
+    .facet_sidebar {
+      display: none;
+    }
+}
+
+*/
+
+.container {
+  /*background-color: blue;*/
+  margin-top: 25px;
+  height: 80vh;
+}
+
+.row{
+  height: 80vh;
+}
+

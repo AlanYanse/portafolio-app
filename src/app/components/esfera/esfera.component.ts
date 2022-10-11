@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
+import { Observable, Subject } from 'rxjs';
 import * as TagCloud from 'TagCloud';
 
 @Component({
@@ -9,6 +10,12 @@ import * as TagCloud from 'TagCloud';
 export class EsferaComponent implements OnInit {
 
   sphereProperty: boolean = true;
+  public getScreenWidth: any = screen.width;
+  radio: any = screen.width > 600 ? 230 : 100;
+  //public getScreenHeight: any;
+  
+  
+
 
   texts: string[] = [
     'HTML', 'CSS', 'JAVASCRIPT',
@@ -18,22 +25,30 @@ export class EsferaComponent implements OnInit {
     'LINUX', 'MYSQL', 'JQUERY', 'JAVA',
     'JIRA'
   ];
+  
 
   //colorProperty = '#FF5733 ';
 
   constructor() {
 
-
   }
 
   ngOnInit(): void {
 
+    
+    let radio = this.radio;
+    console.log(radio);
+
+   
     this.showSphere();
 
     TagCloud('.Sphere', this.texts, {
 
       // Sphere radius in px
-      radius: 230,
+
+      
+      radius: radio,
+   
   
       // animation speed
       // slow, normal, fast
@@ -61,6 +76,23 @@ export class EsferaComponent implements OnInit {
 
     }, duracion);
   }
+
+  /*
+  @HostListener('window:resize', ['$event'])
+  onWindowResize() {
+    this.getScreenWidth = window.innerWidth;
+    this.getScreenHeight = window.innerHeight;
+  }
+  
+
+  
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    this.getScreenWidth = event.target.innerWidth;
+  }
+  */
+
+  
 
   
 
