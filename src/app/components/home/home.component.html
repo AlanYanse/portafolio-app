@@ -21,12 +21,13 @@
         </div>
 </div>
 -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-4 d-flex" style="background-color: purple;">
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="!loading" class="container">
+  <div class="row  align-items-center">
+    <div class="col-lg-4" style="height: 30vh;">
       <app-presentacion></app-presentacion>
     </div>
-    <div class="col-lg-8 d-flex justify-content-center" style="background-color: green;">
+    <div class="col-lg-8 d-flex justify-content-center" style="height: 70vh;">
       <app-esfera></app-esfera>
     </div>
   </div> 

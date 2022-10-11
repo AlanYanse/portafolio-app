@@ -7,3 +7,13 @@
 
 */
 
+.container {
+  /*background-color: blue;*/
+  margin-top: 25px;
+  height: 80vh;
+}
+
+.row{
+  height: 80vh;
+}
+
