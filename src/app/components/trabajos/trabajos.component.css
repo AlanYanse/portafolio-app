@@ -1,0 +1,16 @@
+
+
+.banner {
+    background: #a770ef;
+    background: -webkit-linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+    background: linear-gradient(to right, #a770ef, #cf8bf3, #fdb99b);
+  }
+
+  a{
+    color: #292b2c;
+  }
+
+  a:hover {
+    color: cyan;
+  }
+
