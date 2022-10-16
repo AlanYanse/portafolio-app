@@ -1,6 +1,8 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import * as Notiflix from 'notiflix';
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 @Component({
   selector: 'app-contacto',
@@ -26,7 +28,9 @@ export class ContactoComponent implements OnInit {
 
   envioCorreo(): void{
 
-    let cabecera: string = `Hola soy ${this.contactForm.value.nombre} ${this.contactForm.value.email} ...` 
+    let cabecera: string = `Hola soy ${this.contactForm.value.nombre} ${this.contactForm.value.email} ...`;
+
+    Notiflix.Loading.standard("Enviando..");
 
     let params = {
       //nombre: this.contactForm.value.nombre,
@@ -36,10 +40,17 @@ export class ContactoComponent implements OnInit {
     //console.log(params);
     
     this.httpClient.post(this.url , params).subscribe(res => {
-      console.log(res);
+      //console.log(res);
+      Notiflix.Loading.remove();
+      Notify.success("Gracias por tu mensaje, pronto obtendrás respuesta");
+      this.resetForm();
     });
     
 
+  }
+
+  resetForm(): void{
+    this.contactForm.reset();
   }
 
 }
