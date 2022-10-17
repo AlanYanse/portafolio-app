@@ -11,7 +11,7 @@ export class EsferaComponent implements OnInit {
 
   sphereProperty: boolean = true;
   public getScreenWidth: any = screen.width;
-  radio: any = screen.width > 600 ? 230 : 100;
+  radio: any = screen.width > 600 ? 230 : 120;
   //public getScreenHeight: any;
   
   
