@@ -1,1 +1,16 @@
-<app-spinner *ngIf="loading"></app-spinner><div *ngIf="!loading" class="container"><div class="row align-items-center"><div class="col-lg-4" style="height:30vh"><app-presentacion></app-presentacion></div><div class="col-lg-8 d-flex justify-content-center" style="height:70vh"><app-esfera></app-esfera></div></div></div>
+<app-spinner *ngIf="loading"></app-spinner>
+<div *ngIf="!loading" class="container mt-4">
+    <div class="row" style="height: 70vh;">
+        <div class="col-lg-4">
+            <div class="row" style="height: 20vh;">
+                <div class="contenedor">
+                    <app-presentacion></app-presentacion>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <app-esfera></app-esfera>
+        </div>
+    </div>
+</div>
