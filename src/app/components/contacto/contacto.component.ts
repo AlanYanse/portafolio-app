@@ -12,7 +12,8 @@ import { Notify } from 'notiflix/build/notiflix-notify-aio';
 export class ContactoComponent implements OnInit {
 
   contactForm: FormGroup;
-  url: string = "http://localhost:3000/envio";
+  //url: string = "http://localhost:3000/envio"; desarrollo
+  url: string = "https://backend-nuevo-portafolio-production.up.railway.app/envio";
 
   constructor(private formBuilder: FormBuilder, private httpClient: HttpClient) { 
 
